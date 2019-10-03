@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Book List</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style>
+    .success, .error {
+      padding: 5px;
+      margin: 5px 0 15px 0;
+      border-radius: 5px;
+    }
+
+    .success {
+      color: darkgreen;
+      border: 1px solid green;
+    }
+
+    .error {
+      color: darkred;
+      border: 1px solid red;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <h1>Add Book</h1>
+    <form id="book-form">
+      <div>
+        <label for="title">Title</label>
+        <input id="title" class="u-full-width" type="text">
+      </div>
+      <div>
+        <label for="author">Author</label>
+        <input id="author" class="u-full-width" type="text">
+      </div>
+      <div>
+        <label for="isbn">ISBN</label>
+        <input id="isbn" class="u-full-width" type="text">
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+
+      </tbody>
+    </table>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="appES6.js"></script>
+</body>
+</html>
